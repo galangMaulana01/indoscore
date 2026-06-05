@@ -23,8 +23,9 @@ jobs:
         distribution: 'zulu'
         java-version: '17'
 
-    - name: Sync Capacitor Only
+    - name: Install Dependencies & Sync Capacitor
       run: |
+        npm install
         npx cap sync android
 
     - name: Build APK via Gradle
