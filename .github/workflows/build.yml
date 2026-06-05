@@ -17,11 +17,11 @@ jobs:
       with:
         node-version: '22'
 
-    - name: Setup Java 17
+    - name: Setup Java
       uses: actions/setup-java@v4
       with:
         distribution: 'zulu'
-        java-version: '17'
+        java-version: '21'
 
     - name: Install Dependencies & Sync Capacitor
       run: |
